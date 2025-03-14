@@ -343,3 +343,41 @@ footer a{
     margin-bottom: 100px;
     color: #7a7273;
 }
+.video-container {
+    position: relative;
+    width: 98.9vw; /* Full viewport width */
+    height: calc(80vw * (1704 / 2880)); /* Maintain aspect ratio */
+    overflow: hidden; /* Prevent overflow */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.landscape-video {
+    position: absolute; /* Position the video absolutely within the container */
+    top: 50%; /* Center the video vertically */
+    left: 50%; /* Center the video horizontally */
+    min-width: 100%; /* Ensure the video covers the container */
+    min-height: 100%; /* Ensure the video covers the container */
+    width: auto; /* Allow width to adjust */
+    height: auto; /* Allow height to adjust */
+    transform: translate(-50%, -50%); /* Center the video */
+    object-fit: cover; /* Cover the entire container */
+}
+
+.overlay {
+    position: absolute;
+    bottom: 20px; /* Distance from the bottom */
+    left: 20px; /* Distance from the left */
+    color: white; /* Text color */
+    z-index: 10; /* Ensure overlay is above the video */
+}
+.button1{
+    width: 250px;
+    height: 40px;
+    background-color: white;
+    color:gray;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 250px;
+    
+}
+
